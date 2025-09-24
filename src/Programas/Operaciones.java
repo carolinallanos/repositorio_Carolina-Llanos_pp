@@ -3,24 +3,34 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Programas;
-
+//Paquete de datos e/s datos por consola
 /**
  *
  * @author carol
  */
 import java.util.Scanner;
 public class Operaciones {
-    public static void main (String[] args){
-        int n1,n2,suma;
-            Scanner lectura=new Scanner(System.in);
-            //entrada
-            System.out.print ("Ingresar Número 1:");
-            n1=lectura.nextInt();
-            System.out.print ("Ingresar Número 2:");
-            n2=lectura.nextInt();
-            //proceso
-            suma=n1+n2;
-            //salida
-            System.out.println("La suma de los números es;"+suma);
-    }
-}
+    //Método principal
+    public static void main(String args[]){
+    //Declaración de variables
+    String empleado;
+    double ht,th,sb,d,sn;
+    //Creando el objeto lectura
+    Scanner lectura=new Scanner(System.in);
+    //Entrada de datos
+    System.out.print("Nombre de empleado: ");
+    empleado=lectura.next();
+    System.out.print("Horas trabajadas: ");
+    ht=lectura.nextDouble();
+    System.out.print("Tarifa por hora: ");
+    th=lectura.nextDouble();
+    //Proceso de datos
+    sb=ht*th;
+    d=sb*0.13;
+    sn=sb-d;
+    //Salida de datos
+    System.out.println("Sueldo Bruto: "+sb);
+    System.out.println("Descuento: "+d);
+    System.out.println("Sueldo Neto: "+sn);
+    }//Fin del método
+}//Fin del programa
