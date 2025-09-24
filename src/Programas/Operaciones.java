@@ -14,7 +14,7 @@ public class Operaciones {
     public static void main(String args[]){
     //Declaración de variables
     String empleado;
-    double ht,th,sb,d,sn;
+    double ht,th,sb,d,sn,bs;
     //Creando el objeto lectura
     Scanner lectura=new Scanner(System.in);
     //Entrada de datos
@@ -28,9 +28,11 @@ public class Operaciones {
     sb=ht*th;
     d=sb*0.13;
     sn=sb-d;
+    bs=sb*0.3689;
     //Salida de datos
     System.out.println("Sueldo Bruto: "+sb);
     System.out.println("Descuento: "+d);
     System.out.println("Sueldo Neto: "+sn);
+    System.out.println("Beneficios Sociales: "+bs);
     }//Fin del método
 }//Fin del programa
